@@ -71,7 +71,7 @@ function startApp() {
     window.location.protocol.toLowerCase().indexOf("http") === 0 &&
     window.location.host.toLowerCase().indexOf("localhost") !== 0
   ) {
-    $("#credentials input[name=host]").val("http://solarnode/");
+    $("#credentials input[name=host]").val("http://solarnode");
   }
 }
 
