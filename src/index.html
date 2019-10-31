@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>SolarNode External Login Demo</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2>SolarNode External Login Demo</h2>
+          <p>
+            This page demonstrates how to integrate SolarNode into an external application, so that
+            authentication can be performed outside SolarNode such that the SolarNode credentials
+            are not directly passed to SolarNode. The source code for this app is
+            <a href="https://github.com/SolarNetwork/solarnode-ext-login">available on GitHub</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <form id="credentials">
+            <div class="form-group">
+              <label class="col-form-label-sm">Username</label>
+              <input class="form-control form-control-sm" type="text" name="username" />
+            </div>
+            <div class="form-group">
+              <label class="col-form-label-sm">Password</label>
+              <input class="form-control form-control-sm" type="password" name="password" />
+            </div>
+            <div class="form-group">
+              <label class="col-form-label-sm">Host</label>
+              <input
+                class="form-control form-control-sm"
+                type="text"
+                name="host"
+                value="http://localhost:8680"
+              />
+            </div>
+            <div class="form-group">
+              <button id="login-btn" class="btn btn-primary btn-block" type="submit" disabled>
+                Login
+              </button>
+            </div>
+            <footer>
+              Version <%= VERSION %>
+            </footer>
+          </form>
+        </div>
+        <div class="col">
+          <iframe id="solarnode" src="frame.html"></iframe>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
