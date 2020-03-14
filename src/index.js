@@ -46,7 +46,9 @@ function doLogin() {
       );
 
       console.info(`Encrypted password using AES(${keyRes.data.key}): ${encryptedPassword}`);
-      console.info(`Salty username: ${saltyUsername}`);
+      console.info(
+        `Salty username: ${saltyUsername} (${Hex.stringify(salt)}:${Utf8.parse(creds.username)})`
+      );
 
       const nodeUrl = `${creds.host}/pub/session/login?username=${encodeURIComponent(
         saltyUsername
