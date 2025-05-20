@@ -1,6 +1,6 @@
 {
   "name": "solarnode-ext-login",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "SolarNode External Login Demo.",
   "keywords": [
     "solarnetwork",
@@ -16,33 +16,37 @@
     "type": "git",
     "url": "https://github.com/SolarNetwork/solarnode-ext-login.git"
   },
+  "type": "module",
+  "engines": {
+    "node": ">=20.19"
+  },
   "scripts": {
-    "start": "webpack-dev-server",
-    "build": "webpack"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "bootstrap": "^4.3.1",
-    "crypto-js": "^4.0.0",
-    "jquery": "^3.5.0",
-    "popper.js": "^1.16.0"
+    "bootstrap": "^5.3.6",
+    "crypto-js": "^4.2.0",
+    "jquery": "^3.7.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "babel-loader": "^8.0.6",
-    "babel-plugin-external-helpers": "^6.22.0",
-    "babel-plugin-module-resolver": "^4.0.0",
-    "css-loader": "^3.2.0",
-    "eslint": "^6.6.0",
-    "exports-loader": "^0.7.0",
-    "file-loader": "^6.0.0",
-    "html-webpack-plugin": "^4.3.0",
-    "prettier": "^2.0.5",
-    "style-loader": "^1.0.0",
-    "terser-webpack-plugin": "^2.3.6",
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.9",
-    "webpack-dev-server": "^3.9.0",
-    "webpack-merge": "^4.2.2"
+    "@types/bootstrap": "^5.2.10",
+    "@types/crypto-js": "^4.2.2",
+    "@types/jquery": "^3.5.32",
+    "@typescript-eslint/eslint-plugin": "^8.32.1",
+    "@typescript-eslint/parser": "^8.32.1",
+    "eslint": "^9.27.0",
+    "npmversion": "^2.0.5",
+    "sass": "^1.89.0",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5"
+  },
+  "overrides": {
+    "json5": "2.2.3",
+    "lodash": "4.17.21",
+    "minimist": "1.2.8",
+    "postcss": "8.4.38",
+    "semver": "7.6.0"
   }
 }
