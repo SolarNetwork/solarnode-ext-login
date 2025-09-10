@@ -26,27 +26,28 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "bootstrap": "^5.3.6",
+    "bootstrap": "^5.3.8",
     "crypto-js": "^4.2.0",
     "jquery": "^3.7.1"
   },
   "devDependencies": {
     "@types/bootstrap": "^5.2.10",
     "@types/crypto-js": "^4.2.2",
-    "@types/jquery": "^3.5.32",
-    "@typescript-eslint/eslint-plugin": "^8.32.1",
-    "@typescript-eslint/parser": "^8.32.1",
-    "eslint": "^9.27.0",
+    "@types/jquery": "^3.5.33",
+    "@typescript-eslint/eslint-plugin": "^8.43.0",
+    "@typescript-eslint/parser": "^8.43.0",
+    "eslint": "^9.35.0",
     "npmversion": "^2.0.5",
-    "sass": "^1.89.0",
-    "typescript": "^5.8.3",
-    "vite": "^6.3.5"
+    "sass": "^1.92.1",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.5"
   },
   "overrides": {
     "json5": "2.2.3",
     "lodash": "4.17.21",
     "minimist": "1.2.8",
     "postcss": "8.4.38",
-    "semver": "7.6.0"
+    "semver": "7.6.0",
+    "tmp": "0.2.5"
   }
 }
