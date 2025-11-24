@@ -1,6 +1,6 @@
 {
   "name": "solarnode-ext-login",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "SolarNode External Login Demo.",
   "keywords": [
     "solarnetwork",
@@ -34,13 +34,13 @@
     "@types/bootstrap": "^5.2.10",
     "@types/crypto-js": "^4.2.2",
     "@types/jquery": "^3.5.33",
-    "@typescript-eslint/eslint-plugin": "^8.46.2",
-    "@typescript-eslint/parser": "^8.46.2",
-    "eslint": "^9.38.0",
+    "@typescript-eslint/eslint-plugin": "^8.47.0",
+    "@typescript-eslint/parser": "^8.47.0",
+    "eslint": "^9.39.1",
     "npmversion": "^2.0.5",
-    "sass": "^1.93.2",
+    "sass": "^1.94.2",
     "typescript": "^5.9.3",
-    "vite": "^7.1.12"
+    "vite": "^7.2.4"
   },
   "overrides": {
     "json5": "2.2.3",
